@@ -10,8 +10,8 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'A Test Recipe',
-      'This is a sample.',
+      'Kimbap',
+      'Delicious Korean kimbap.',
       'https://www.maangchi.com/wp-content/uploads/2013/09/kimbap.jpg',
       [
         new Ingredient('Rice', 1),
@@ -19,24 +19,31 @@ export class RecipeService {
         new Ingredient('Tuna', 2)
       ]),
     new Recipe(
-      'Another Test Recipe',
-      'This is a sample.',
-      'https://www.maangchi.com/wp-content/uploads/2013/09/kimbap.jpg',
+      'Cheeseburger',
+      'Incredible cheeseburger.',
+      'https://image.shutterstock.com/z/stock-photo-classic-cheeseburger-isolated-on-white-background-604655519.jpg',
       [
-        new Ingredient('Rice', 1),
-        new Ingredient('Seaweed Paper', 2),
-        new Ingredient('Tuna', 2)
+        new Ingredient('Bun', 1),
+        new Ingredient('Ground Beef', 1),
+        new Ingredient('Cheese', 1),
+        new Ingredient('Tomato', 1),
+        new Ingredient('Lettuce', 1),
       ])
   ];
 
-  constructor(private slService: ShoppingListService) {}
+  constructor(private slService: ShoppingListService) {
+  }
 
   getRecipes() {
     return this.recipes.slice();
   }
 
+  getRecipe(index: number) {
+    return this.recipes[index];
+  }
+
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.slService.addIngredients(ingredients);
-      }
+  }
 
 }
