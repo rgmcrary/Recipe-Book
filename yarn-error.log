@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/rich/.nvm/versions/node/v8.9.4/bin/node /Users/rich/.nvm/versions/node/v8.9.4/bin/yarn add --save @nguniversal-express-engine
+  /Users/rich/.nvm/versions/node/v8.9.4/bin/node /Users/rich/.nvm/versions/node/v8.9.4/bin/yarn add --save @ngrx/store
 
 PATH: 
   /Users/rich/.nvm/versions/node/v8.9.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands
@@ -38,6 +38,8 @@ npm manifest:
       "@angular/platform-browser": "^5.2.0",
       "@angular/platform-browser-dynamic": "^5.2.0",
       "@angular/router": "^5.2.0",
+      "@nguniversal/express-engine": "^5.0.0",
+      "@nguniversal/module-map-ngfactory-loader": "^5.0.0",
       "bootstrap": "^3.3.7",
       "cli": "^1.0.1",
       "core-js": "^2.4.1",
