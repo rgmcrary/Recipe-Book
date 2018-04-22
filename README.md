@@ -1,5 +1,7 @@
 # Recipe Book
 
+This application allows a user to input favorite recipes, recipe image, direction/descriptions and ingredients. A shopping list is also integrated to allow for the user to have a collection of needed ingredients as well as allows for a user to add ingredients to the shopping list directly from the recipe page.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
 ## Development server
