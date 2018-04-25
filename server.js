@@ -10,7 +10,7 @@ const { provideModuleMap } = require('@nguniversal/module-map-ngfactory-loader')
 const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist-server/main.bundle');
 
 function angularRouter(req, res) {
-  res.render('index', {req, res});
+  res.render('index', { req, res });
 }
 
 const app = express();
