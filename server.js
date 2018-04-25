@@ -32,5 +32,5 @@ app.use(express.static(`${__dirname}/dist`));
 app.get('*', angularRouter);
 
 app.listen(PORT, () => {
-  console.log('Listening on port' + PORT);
+  console.log(`Listening on port ${PORT}`);
 });
