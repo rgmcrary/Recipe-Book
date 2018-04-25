@@ -9,7 +9,8 @@
     "build:ssr": "ng build --prod && ng build --prod --app 1 --output-hashing=none",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
